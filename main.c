@@ -27,6 +27,11 @@ int SetupCallbacks(void) {
 int main() { //In C++ `auto main() -> int` is also valid.
 	SetupCallbacks();
 	pspDebugScreenInit();
+	
 	pspDebugScreenPrintf("Hello World!");
-	//return 0;
+	while(1){
+	}
+
+    sceKernelExitGame();
+    return 0;
 }
